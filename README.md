@@ -4,7 +4,7 @@
 
 Проект состоит из датасета и предобученной нейросети Yolov8.
 
-## Датасет 
+# Датасет 
 
 ## Ссылка
 
@@ -22,7 +22,7 @@ https://app.roboflow.com/smoke-cgloa/camo_people/2
 
 В каждом из батчей находятся фотографии в формате .jpeg и представленные к ним метки в формате .txt
 
-## Модель
+# Модель
 
 ## Описание
 
@@ -32,6 +32,6 @@ https://app.roboflow.com/smoke-cgloa/camo_people/2
 
 Результаты модели имеют threshold of confidence в размере 60%.
 
-### Пример предикта модели (данная фотография не была в датасете)
+## Пример предикта модели (данная фотография не была в датасете)
 
 ![sample](https://github.com/YernarBekbolat/military-camo-detection/assets/81419096/e4fd119f-4371-4ac9-bdcc-f11a33ff7d2a)
