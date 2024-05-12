@@ -1,10 +1,37 @@
-# Military Camofluage Detection
-# Dataset is public, so don't mind the dataset download process (https://app.roboflow.com/smoke-cgloa/camo_people/2)
+# MountainEagleAI - нейросеть компьютерного зрения для обнаружения камуфлированных людей.
 
-# At the current time, only detects people from photos
+## Структура проекта
 
-Object detection project in development in order to detect unseen targets.
+Проект состоит из датасета и обученной нейросети Yolov8.
 
-Pretrained Yolov8 and labeled dataset of the 1078 640x640 images of camofluaged personnel.
+### Датасет 
+
+### Ссылка
+
+https://app.roboflow.com/smoke-cgloa/camo_people/2
+
+### Описание
+
+Датасет состоит из 1078 размеченных фотографии с размерностью 640x640. На каждой фотографии представлен человек с камуфляжем, скрывающем его в природном окружении. 
+
+Датасет поделен на три батча:
+
+- Train 60%
+- Test 20%
+- Val 20%
+
+В каждом из батчей находятся фотографии в формате .jpeg и представленные к ним метки в формате .txt
+
+### Модель
+
+### Описание
+
+Модель базируется на Yolov8, импортированного из ultralytics. 
+
+Последние слои модели были дообучены на представленном датасете.
+
+Результаты модели имеют threshold of confidence в размере 60%.
+
+### Пример предикта модели (данная фотография не была в датасете)
 
 ![sample](https://github.com/YernarBekbolat/military-camo-detection/assets/81419096/e4fd119f-4371-4ac9-bdcc-f11a33ff7d2a)
